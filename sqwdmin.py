@@ -68,7 +68,7 @@ for target in range(0, 5):
                         grid = '\n'.join(hw_list)
                         
                         spinner = ['|', '/', '-', '\\']
-                        ellipses = ['', '.', '..', '...']
+                        ellipses = ['   ', '.  ', '.. ', '...']
                         
                         print(f"\r{spinner[spin_pos]} | {' '.join(hw_list)} | [{grids}/{g}]{ellipses[spin_pos]}", end="")
                         
