@@ -1,0 +1,1 @@
+ticks_per_frame = 1000

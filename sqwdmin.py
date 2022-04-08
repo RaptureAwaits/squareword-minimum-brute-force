@@ -1,4 +1,5 @@
 import time
+from customize import ticks_per_frame
 
 with open('list.txt', 'r') as f:
     words_string = f.read()
@@ -72,7 +73,7 @@ for target in range(0, 5):
                         print(f"\r{spinner[spin_pos]} | {' '.join(hw_list)} | [{grids}/{g}]{ellipses[spin_pos]}", end="")
                         
                         ticks += 1
-                        if ticks == 1000:
+                        if ticks == ticks_per_frame:
                             ticks = 0
                             spin_pos += 1
                             
